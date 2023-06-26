@@ -26,6 +26,7 @@
        letter-spacing: 0.22em;
        box-shadow: 2px 2px 5px var(--clr);
 }
+/*navigation bar*/
 .nav{
     display: flex;
     align-items: center;
@@ -70,8 +71,6 @@ p{
 }
 
 /* cart icon*/
-
-
 .cart{
     margin-top: 8px;
     background: 50px 40px #fff4d9;
@@ -83,7 +82,14 @@ p{
     width: 10px;
     height: 10pxs;
 }
+.cart ion-icon{
+    font-size: 30px;
+}
+.cart ion-icon, span{
+    object-fit: cover;
+}
 
+/*header intro*/
 
 .container{
     max-width: 1300px;
@@ -157,7 +163,7 @@ background: radial-gradient(#f1e5c9, rgb(239, 223, 147));
     font-size: small;
 }
 .add-cart:hover{
-    background: #a96f44;
+    background: #f0c8ab;
 }
 
 /* featured section css*/
@@ -186,11 +192,16 @@ background: radial-gradient(#f1e5c9, rgb(239, 223, 147));
     padding: 12px;
     min-width: 200px;
     margin-bottom: 40px;
-    transition: transform 0.5s;
-   
+    transition: transform 0.5s;  
 }
+
 .col-4 img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.col-4 img:hover{
+    box-shadow: 1px 1px 5px 0.5px #ae9582;
 }
 .title-1{
     text-align: center;
@@ -445,12 +456,57 @@ input:focus{
     cursor: pointer;
 }
 
+/*--add a review--*/
+.add-review{
+    width: 100%;
+    padding: 100px 5vw 0;
+}
+.rev-title{
+    text-transform: uppercase;
+    font-size: 23px;
+    margin: 0 auto 10px;
+    position: relative;
+    line-height: 60px;
+}
+.review-bar1, .review-bar2{
+    width: 100%;
+    height: 40px;
+    border: 2px solid #e1d2b2;
+    margin: 10px 0 ;
+    padding: 10px;
+    line-height: 40px;
+    color: black;
+    outline: none;
+    text-transform: capitalize;
+}
+.review-bar2{
+    height: 160px;
+    resize: none;
+    padding: 0 10px;
+}
+.review-bar1:focus, .review-bar2:focus{
+    border-color: #eab73f;
+}
+.add-btn{
+    border: none;
+    outline: none;
+    background: #b19553;
+    padding: 10px 10px;
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.add-btn:hover{
+    background: #eab73f;
+}
+
 
 /*-------cart items------*/
 
 .product-container{
     max-width: 650px;
-    align-items: center;
+    align-items: start;
     justify-content: space-around;
     margin: 0 auto;
     margin: 40px;
@@ -482,12 +538,8 @@ input:focus{
     align-items: center;
 }
 .products{
-    width: 45%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-
+   align-items: start;
+       
 }
 
 
@@ -525,3 +577,5 @@ input:focus{
     }
 
 }
+
+

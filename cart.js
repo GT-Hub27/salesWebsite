@@ -5,8 +5,8 @@ let carts = document.querySelectorAll('.add-cart');
 
 let products = [
   {
-    name: 'Diffuse-1',
-    tag: 'diffuse1',
+    name: 'diffuse-1',
+    tag: 'diffuse-1',
     price: 9,
     inCart: 0,
     img: "images/diffuse-1.jpg" 
@@ -14,32 +14,32 @@ let products = [
   },
   {
     name: 'Reed-Dffuser-1',
-    tag: 'reeddiffuse1',
+    tag: 'reed-diffuser-1',
     price: 12,
     inCart: 0,
     img: "images/reed-diffuser-1.jpg"
   },
   {
     name: 'Candle-3',
-    tag: 'candle3',
+    tag: 'candle-3',
     price: 4,
     inCart: 0
   }, 
   {
     name: 'Reed-Dffuser-4',
-    tag: 'reeddiffuse4',
+    tag: 'reed-diffiser-4',
     price: 4,
     inCart: 0
   },
   {
     name: 'Diffuse-2',
-    tag: 'diffuse2',
-    price: 9,
+    tag: 'diffuse-2',
+    price:  9,
     inCart: 0
   },
   {
     name: 'Diffuse-3',
-    tag: 'diffuse3',
+    tag: 'diffuse-3',
     price: 12,
     inCart: 0
   },
@@ -106,8 +106,10 @@ function displayCart() {
       productContainer.innerHTML += `
         <div class="products"> 
           <ion-icon name="close-outline"></ion-icon>
-          <img src="./images/${item.tag}.jpg">
+          <img src="./images/${item.tag}.jpg" width="180" height="180">
           <span>${item.name}</span>
+          <span>${item.price}</span>
+          <span>${item.inCart}</span>
         </div>
       `;
     });
