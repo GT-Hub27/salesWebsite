@@ -43,6 +43,7 @@ let products = [
     price: 12,
     inCart: 0
   },
+  
 
 ];
 
